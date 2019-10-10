@@ -10,6 +10,9 @@ import java.util.*
 const val EMPTY_DICE = 0
 
 class MainActivity : AppCompatActivity() {
+    // The question mark (?) allow the data type to be nullable
+    // Late init a promise that it will never be null (late initizialization)
+    private lateinit var diceImage: ImageView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -24,7 +27,7 @@ class MainActivity : AppCompatActivity() {
         // const ImageView that has reference to layout dice_image.
         // This var attribute will be alter for different displaying pursposes.
         // The id itself it const
-        val diceImage: ImageView = findViewById(R.id.dice_image)
+         diceImage = findViewById(R.id.dice_image)
 
         // Image src initialize to empty dice
         setDiceImageViewResource(EMPTY_DICE, diceImage)
