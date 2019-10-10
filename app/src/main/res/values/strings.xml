@@ -1,4 +1,6 @@
 <resources>
     <string name="app_name">Dice Roller</string>
-    <string name="roll">Roll</string>
+    <string name="image_descrition">Dice Vector Image</string>
+    <string name="text_roll">Roll</string>
+    <string name="text_letsRoll">Let\'s Roll!</string>
 </resources>
